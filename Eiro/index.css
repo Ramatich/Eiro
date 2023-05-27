@@ -1,0 +1,182 @@
+body {
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .logo h1 {
+    color: green;
+    margin-left: 10px;
+  }
+  .l-services{
+    margin-left: 220px;
+  }
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    margin-left: 220px;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-links a{
+    color:white;
+    text-decoration: none;
+  }
+  .nav-links li {
+    margin-right: 20px;
+  }
+  .dropdown-1{
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 5px 0;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .search-contact {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 570px;
+  }
+  
+  .search-contact input[type="text"] {
+    padding: 5px;
+    
+  }
+  
+  .search-btn {
+    margin-left:0px;
+
+  }
+  
+  .contact-btn {
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: black;
+    color:white;
+    padding:13px;
+    margin-left:7px;
+  }
+  
+
+  
+  .profile {
+    margin-left: 20px;
+ 
+  }
+  
+  .flag{
+    margin-left:20px;
+  }
+  .header-hr{
+    margin-top:5px;
+  }
+  .title{
+    margin-left:100px;
+  }
+  .fa-solid fa-user{
+    margin-right: 10px;
+  }
+
+
+
+
+/* Mobile Phones */
+@media screen and (max-width: 480px) {
+    .header {
+      flex-wrap: wrap;
+    }
+  
+    .logo {
+      margin-right: 10px;
+    }
+  
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 10px 0;
+    }
+  
+    .nav-links li {
+      margin-right: 10px;
+    }
+  
+    .search-contact {
+      margin: 10px 0;
+      justify-content: center;
+    }
+  
+    .profile,
+    .flag {
+      margin: 10px 5px;
+    }
+  
+    .title {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
+  /* Tablets */
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .nav-links {
+      justify-content: space-evenly;
+    }
+  
+    .search-contact {
+      margin: 0;
+      justify-content: center;
+    }
+  }
+  
+  /* Laptops */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .search-contact {
+      margin: 0;
+    }
+  }
+  
+  /* Monitors */
+  @media screen and (min-width: 1025px) {
+    /* No additional styles needed for monitors */
+  }
+  
